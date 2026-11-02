@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import FileUpload from "./components/FileUpload";
 import Summary from "./components/Summary";
 import Chat from "./components/Chat";
@@ -17,6 +18,8 @@ function App() {
         ) : (
           <FileUpload setFile={setFileUploaded} fileName={fileUploaded?.name} />
         )}
+
+        <Footer />
       </main>
     </>
   );
